@@ -1,1 +1,12 @@
-
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>First Choice Movers | Admin</title><link rel="stylesheet" href="/assets/admin.css"></head>
+<body>
+<div id="loginView" class="login-page"><div class="login-card"><img src="/assets/logo.jpg" alt="Logo"><h1>Admin Dashboard</h1><p>First Choice Movers</p><form id="loginForm"><label>Admin password<input id="password" type="password" required autocomplete="current-password"></label><button type="submit">Sign in</button><div id="loginError"></div></form></div></div>
+<div id="appView" class="app hidden"><header class="admin-header"><div><b>FIRST CHOICE MOVERS</b><span>Admin Dashboard</span></div><div class="header-actions"><span id="liveDot" class="offline">● Offline</span><button id="logout">Logout</button></div></header>
+<main class="admin-main"><section class="stats"><div><span>Total</span><b id="total">0</b></div><div><span>New</span><b id="newCount">0</b></div><div><span>Contacted</span><b id="contacted">0</b></div><div><span>Quoted</span><b id="quoted">0</b></div><div><span>Booked</span><b id="booked">0</b></div></section>
+<section class="toolbar"><input id="search" placeholder="Search customer, phone, email or suburb"><select id="statusFilter"><option value="">All statuses</option><option>New</option><option>Contacted</option><option>Quoted</option><option>Booked</option><option>Completed</option><option>Cancelled</option></select><button id="refresh">Refresh</button></section>
+<section class="panel"><div class="panel-head"><h2>Quote requests</h2><span id="lastUpdated">Waiting for data</span></div><div class="table-wrap"><table><thead><tr><th>Customer</th><th>Service</th><th>Route</th><th>Move date</th><th>Status</th><th></th></tr></thead><tbody id="quotesBody"><tr><td colspan="6" class="empty">No quote requests yet.</td></tr></tbody></table></div></section>
+<section class="panel reviews-panel"><div class="panel-head"><h2>Reviews</h2><span>Approve customer reviews before publishing</span></div><div id="reviewsAdmin"></div></section>
+</main></div>
+<div id="detailModal" class="modal hidden"><div class="modal-box"><button class="close" id="closeModal">×</button><h2>Quote details</h2><div id="detailContent"></div></div></div>
+<script src="/assets/admin.js"></script></body></html>
